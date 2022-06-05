@@ -6,6 +6,8 @@ nombre1 = input("Ingrese su nombre: ")
 apellido1 = input("Ingrese su apellido: ")
 persona1 = Persona(nombre1, apellido1)
 
-print("Detalle de Personas linea por linea:")
-print(persona.verDetalle())
-print(persona1.verDetalle())
+personas = [persona, persona1]
+
+print("Detalle de Personas ciclo for:")
+for p in personas:
+    print(p.verDetalle())
